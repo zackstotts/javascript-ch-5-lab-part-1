@@ -6,22 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
+
     <title>numbers 1-100</title>
 </head>
 
 <body>
-<p id="script"></p>
+    <p id="script"></p>
 
 
-<script>
-    for (var a = 1; a < 101; a++) {
+    <script>
+        for (var a = 1; a < 101; a++) {
 
-        if (i % 3 === 0) {
-            document.getElementById("script").innerHTML += "Fizz<br>";
+            if (i % 3 === 0) {
+                document.getElementById("script").innerHTML += "Fizz<br>";
+            } else if (i % 5 === 0) {
+                document.getElementById("script").innerHTML += "Buzz<br>";
+            } else {
+                document.getElementById("script").innerHTML += i + "<br>";
+            }
         }
-    }
-</script>
+    </script>
 
 </body>
 
