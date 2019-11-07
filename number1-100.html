@@ -14,14 +14,27 @@
     <p id="script"></p>
 
 
-    <script>
-        for (var a = 1; a < 101; a++) {
+    <script> 
+            
 
-            if (i % 3 === 0) {
-                document.getElementById("script").innerHTML += "Fizz<br>";
-            } else if (i % 5 === 0) {
-                document.getElementById("script").innerHTML += "Buzz<br>";
-            } else {
+        for (var i = 1; i < 100; i++) {
+
+            let hexaDec = i.toString(16);
+
+            if(i % 15 === 0){
+                document.getElementById("script").innerHTML += hexaDec + "<br>";
+            }
+
+            else if (i % 3 === 0) {
+                document.getElementById("script").innerHTML += "Fizz <br>";
+            } 
+            else if (i % 5 === 0) {
+                document.getElementById("script").innerHTML += "Buzz <br>";
+            } 
+            else if (i % 7 === 0) {
+                document.getElementById("script").innerHTML += "FUzZ <br>";
+            }
+             else {
                 document.getElementById("script").innerHTML += i + "<br>";
             }
         }
